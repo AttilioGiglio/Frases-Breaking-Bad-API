@@ -20,9 +20,16 @@ const Boton = styled.button`
 `;
 
 function App() {
+
+  const consultarApi = async() => {
+    const resultado = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes');
+    const frase = await resultado.json()
+    return frase[0]
+  }
+
   return (
     <Contenedor>
-      <Boton>
+      <Boton onClick={}>
         Obtener Frase
     </Boton>
     </Contenedor>
