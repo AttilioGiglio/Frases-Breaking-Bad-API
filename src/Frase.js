@@ -17,7 +17,7 @@ const ContenedorFrase = styled.div `
 
         &::before{
             content:open-quote;
-            font-size:10rem;
+            font-size:8rem;
             color:black;
             position: absolute;
             left:-1rem;
